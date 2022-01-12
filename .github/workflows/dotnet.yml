@@ -2,12 +2,8 @@ name: .NET deploy
 
 on:
   push:
-    paths:
-      - 'Application/*'
   pull_request:
-    paths:
-      - 'Application/*'
-      
+ 
 jobs:
   build:
 
