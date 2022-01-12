@@ -56,7 +56,7 @@
                 "[concat('hidden-related:', '/subscriptions/', subscription().subscriptionId,'/resourcegroups/', resourceGroup().name, '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]": "empty"
             },
             "properties": {
-                "name": "[parameters('webAppName')]",
+                "name": "[concat(parameters('webAppName'), parameters('environment'))]",
                 "siteConfig": {
                     "appSettings": [
                         {
@@ -114,7 +114,7 @@
             "apiVersion": "2016-09-01",
             "location": "[resourceGroup().location]",
             "properties": {
-                "name": "[parameters('hostingPlanName')]",
+                "name": "[concat(parameters('hostingPlanName'), parameters('environment'))]",
                 "workerSizeId": "0",
                 "reserved": true,
                 "numberOfWorkers": "1",
@@ -130,7 +130,7 @@
                 "[concat('hidden-link:', resourceGroup().id, '/providers/Microsoft.Web/sites/', parameters('webAppName'))]": "Resource"
             },
             "properties": {
-                "applicationId": "[parameters('webAppName')]",
+                "applicationId": "[concat(parameters('webAppName'), parameters('environment'))]",
                 "Request_Source": "AzureTfsExtensionAzureProject"
             }
         }
