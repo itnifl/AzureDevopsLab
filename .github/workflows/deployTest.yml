@@ -15,6 +15,10 @@ jobs:
         with:
           creds: '${{ secrets.AZURE_CREDENTIALS }}'
 
+      - name: 'Checkout file'
+        uses: actions/checkout@v2
+
+
       - name: Run ARM deploy Test
         uses: azure/arm-deploy@v1
         with:
