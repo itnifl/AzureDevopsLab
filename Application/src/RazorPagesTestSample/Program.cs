@@ -6,6 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using RazorPagesTestSample.Data;
 
+//Let's get started!!
 namespace RazorPagesTestSample
 {
     public class Program
