@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using RazorPagesTestSample.Data;
 
-//Let's get started!!
+//Let's get started!! Deploy, deploy, deploy
 namespace RazorPagesTestSample
 {
     public class Program
