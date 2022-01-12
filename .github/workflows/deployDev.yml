@@ -24,3 +24,4 @@ jobs:
         with:
           resourceGroupName: atle_devops
           template: ARM-Templates/container-webapp-template.json
+          parameter: environment=dev
