@@ -15,8 +15,12 @@ jobs:
         with:
           creds: '${{ secrets.AZURE_CREDENTIALS }}'
 
-      - name: Run ARM deploy
+      - name: 'Checkout file'
+        uses: actions/checkout@v2
+
+
+      - name: Run ARM deploy Prod
         uses: azure/arm-deploy@v1
         with:
           resourceGroupName: atle_devops
-          template: container-webapp-template.json
+          template: ARM-Templates/container-webapp-template.json
