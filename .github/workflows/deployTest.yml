@@ -15,7 +15,7 @@ jobs:
         with:
           creds: '${{ secrets.AZURE_CREDENTIALS }}'
 
-      - name: Run ARM deploy
+      - name: Run ARM deploy Dev
         uses: azure/arm-deploy@v1
         with:
           resourceGroupName: atle_devops
