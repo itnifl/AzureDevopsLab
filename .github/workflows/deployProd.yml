@@ -19,4 +19,4 @@ jobs:
         uses: azure/arm-deploy@v1
         with:
           resourceGroupName: atle_devops
-          template: ARM-Templates/container-webapp-template.json
+          template: .github/workflows/ARM-Templates/container-webapp-template.json
